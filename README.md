@@ -1,2 +1,2 @@
-# sistemaFacturacion2
-Solicitud y modificacion de informacion
+# systemaFacturacion2
+Area de Solicitudes de la aplicacion

@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./Imagenes/Fondo11.jpg);
+  background-size: cover;
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+}
+
+svg {
+}
+
+.gridContainer {
+  display: grid;
+  justify-content: center;
+
+  /*grid-template-rows: repeat(5, 100px)*/
+  /*grid-template-columns: repeat(5, 100px)*/
+  height: 100vh;
+  gap: 10px;
+
+  /********************* GRID *********************/
+  grid-template:
+    "Navbar         Navbar      Navbar      Navbar   " 70px
+    "TitleBar       TitleBar    TitleBar    TitleBar " 80px
+    "Main           Main        Main        Sidebar  " 1fr
+    "Main           Main        Main        .        "
+    "Main           Main        Main        SidebarLeft" 1fr
+    "Footer         Footer      Footer      Footer   " 50px /
+    300px 600px 300px 300px;
+
+  /********************* GRID *********************/
+}
+
+.Navbar {
+  border-bottom: solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: Navbar;
+  border-radius: 10px 10px 0 0;
+  padding: 0 10px;
+}
+
+.logoCaja {
+  width: 4rem;
+}
+
+.botonesNav {
+  display: flex;
+}
+
+.TitleBar {
+  border-radius: 10px;
+  background-color: #3399ff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  grid-area: TitleBar;
+  font-size: 2rem;
+  color: white;
+
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+}
+
+.Main {
+  border-radius: 10px;
+  background-color: rgba(173, 216, 230, 0.637);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  grid-area: Main;
+  padding: 15px;
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+}
+
+.cajaDatos {
+  background-color: rgba(245, 245, 220, 0.87);
+  border-radius: 10px;
+  height: 55rem;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  margin: 30px;
+}
+
+.mensaje {
+  background-color: rgba(0, 255, 255, 0.322);
+  border: solid cyan 2px;
+  height: 50px;
+  margin: 5px 30px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 30px;
+  border-radius: 10px;
+}
+
+.Sidebar {
+  grid-area: Sidebar;
+}
+
+.SidebarLeft {
+  grid-area: SidebarLeft;
+}
+
+.Sidebar,
+.SidebarLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(173, 216, 230, 0.637);
+  padding-bottom: 50px;
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+}
+
+.Footer {
+  border-top: solid;
+  grid-area: Footer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+/********************* BOTONES *********************/
+
+.btn {
+  background-color: blue;
+  width: 80px;
+  height: 30px;
+  border: solid 1px black;
+  margin: 8px;
+}
+
+.SidebarLeft > .btn {
+  width: 85%;
+  margin: 0.4em 8%;
+}
+
+.Sidebar > .btn {
+  width: 85%;
+  margin: 0.4em 8%;
+}
+
+.info,
+.crear {
+  margin-bottom: 30px;
+}
+
+/* CSS */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Moderustic", sans-serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  margin: 0 3px;
+}
+
+.button-30:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* CSS */
+.button-58 {
+  align-items: center;
+  background-color: #06f;
+  border: 2px solid #06f;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: space-between;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 6px;
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+}
+
+.button-58:focus {
+  color: #171e29;
+}
+
+.button-58:hover {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+.button-58:active {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-58 {
+    min-width: 170px;
+  }
+}
+
+/* CSS */
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #00000088;
+  border-radius: 5px;
+  color: #000000b7;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  min-width: 140px;
+  margin: 5px 0;
+  outline: 0;
+  padding: 0 17px;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+
