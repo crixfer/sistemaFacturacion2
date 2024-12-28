@@ -9,9 +9,6 @@ body {
   font-optical-sizing: auto;
 }
 
-svg {
-}
-
 .gridContainer {
   display: grid;
   justify-content: center;
@@ -63,9 +60,9 @@ svg {
   font-size: 2rem;
   color: white;
 
-  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
   -webkit-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
 }
 
 .Main {
@@ -76,9 +73,9 @@ svg {
   justify-content: end;
   grid-area: Main;
   padding: 15px;
-  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
   -webkit-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
 }
 
 .cajaDatos {
@@ -88,6 +85,14 @@ svg {
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cajas {
+  width: 70%;
+  opacity: 0.3;
 }
 
 .mensaje {
@@ -120,9 +125,9 @@ svg {
   border-radius: 10px;
   background-color: rgba(173, 216, 230, 0.637);
   padding-bottom: 50px;
-  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
   -webkit-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
 }
 
 .Footer {
@@ -182,8 +187,8 @@ svg {
   text-align: left;
   text-decoration: none;
   transition: box-shadow 0.15s, transform 0.15s;
-  user-select: none;
   -webkit-user-select: none;
+  user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
@@ -228,13 +233,13 @@ svg {
   padding: 0 17px;
   text-decoration: none;
   transition: all 0.3s;
-  user-select: none;
   -webkit-user-select: none;
+  user-select: none;
   touch-action: manipulation;
   margin: 6px;
-  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
   -webkit-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
 }
 
 .button-58:focus {
@@ -281,12 +286,12 @@ svg {
   padding: 0 17px;
   text-decoration: none;
   transition: all 0.3s;
-  user-select: none;
   -webkit-user-select: none;
+  user-select: none;
   touch-action: manipulation;
-  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
   -webkit-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.47);
 }
 
 .button-59:focus {
@@ -310,4 +315,3 @@ svg {
     min-width: 170px;
   }
 }
-
